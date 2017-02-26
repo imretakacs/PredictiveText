@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SimplePrdictiveText", "SimplePredictiveText\SimplePrdictiveText.fsproj", "{ECFA47EB-051E-43F6-A415-9FF0B814FD5F}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SimplePrdictiveText.Test", "SimplePrdictiveText.Test\SimplePrdictiveText.Test.fsproj", "{86FC2559-2FCA-4FE0-A5B6-6F53F3809819}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ECFA47EB-051E-43F6-A415-9FF0B814FD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECFA47EB-051E-43F6-A415-9FF0B814FD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECFA47EB-051E-43F6-A415-9FF0B814FD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86FC2559-2FCA-4FE0-A5B6-6F53F3809819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86FC2559-2FCA-4FE0-A5B6-6F53F3809819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86FC2559-2FCA-4FE0-A5B6-6F53F3809819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86FC2559-2FCA-4FE0-A5B6-6F53F3809819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

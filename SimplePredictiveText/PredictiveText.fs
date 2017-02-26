@@ -2,22 +2,18 @@
 open System.IO
 open System
 
-let usDict = Path.Combine(__SOURCE_DIRECTORY__, "dict.txt")
+let private usDict = Path.Combine(__SOURCE_DIRECTORY__, "dict.txt")
 
-let loadDictFromPath path =
+///Allow you to load your own dictionary of data
+let LoadDictFromPath path =
    File.ReadAllLines path
 
-let loadDict () : string array = 
-   let dic : string array = loadDictFromPath usDict
+ ///Loads the default US dictionary of words
+let LoadDict () : string array = 
+   let dic : string array = LoadDictFromPath usDict
    dic
 
-let loaded : string array = loadDict()
-
-let filtering =
-   let data = [|"butyl";"buyer";"buzzy";"bwana";"bylaw";"byron";"bytes"|]
-   let candidtes = data |> Array.filter (fun word -> word.Contains "w")
-   candidtes
-
-let autocomplete (prefix:string) (dict:string[]) =
+///Find the words that starts with the given prefix
+let Autocomplete (prefix:string) (dict:string[]) =
    let candidtes = dict |> Array.filter (fun word -> word.StartsWith prefix)
    candidtes
